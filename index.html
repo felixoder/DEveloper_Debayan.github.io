@@ -105,7 +105,7 @@
             color: blueviolet;
         }
 
-        .secondsection {
+        .secondsection, .fourthsection ,.thirdsection  {
             max-width: 80vw;
             margin: auto;
             height: 80vh;
@@ -128,11 +128,11 @@
             margin: 40px 84px;
         }
 
-        .secondsection h1 {
+        .secondsection ,.thirdsection ,.fourthsection h1 {
             font-size: 1.5rem;
         }
 
-        .secondsection .vertical {
+        .secondsection .vertical , .thirdsection .vertical , .fourthsection .vertical{
             height: 93px;
             width: 1px;
             background-color: white;
@@ -159,24 +159,12 @@
             top: -32px;
             left: -9px;
         }
-
-        footer {
-            background-color: rgb(9, 11, 48);
-
+        footer{
+            text-align: center;
+            height: fit-content;
+            background-color: rgb(13, 13, 19);
         }
-
-        .footer {
-            display: flex;
-
-            height: 233px;
-            margin: 23px 122px;
-
-        }
-
-        .footer {
-            display: flex;
-            justify-content: center;
-        }
+       
 
         /* Your existing styles... */
 
@@ -205,10 +193,10 @@
                 flex-direction: column;
             }
 
-            .secondsection {
+            .secondsection ,.fourthsection ,.thirdsection{
                 min-width: 80vw;
                 margin: auto;
-                height: 80vh;
+                height: 230vh;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -225,7 +213,7 @@
             }
 
             .firstsection>div {
-                width: 80%;
+                width: 40%;
                 text-align: center;
             }
 
@@ -240,13 +228,13 @@
                 flex-direction: column;
                 align-items: center;
             }
+            
 
-            main hr {
-                margin: 20px 0;
-            }
+           
 
-            .secondsection .vertical {
+            .secondsection .vertical , .thirdsection .vertical , .fourthsection .vertical {
                 height: unset;
+                
             }
 
             .box {
@@ -259,26 +247,32 @@
 
             }
 
-            .secondsection .box {
+            .secondsection .box  , .thirdsection .box ,.fourthsection .box{
                 width: 50vw;
             }
+            .secondsection ,.thirdsection ,.fourthsection{
+                margin-top: 20px;
+            }
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
 
             nav {
                 flex-direction: column-reverse;
             }
 
-            .secondsection {
+            .secondsection , .thirdsection ,.fourthsection {
                 min-width: 80vw;
                margin: auto;
-                height: 80vh;
+                /* height: 80vh; */
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
 
-            footer {
-                display: none;
-            }
+           
         }
     </style>
 </head>
@@ -290,7 +284,7 @@
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
+                    
                     <li><a href="/">Services</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Conatct</a></li>
@@ -298,7 +292,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main id="firstmain">
         <section class="firstsection">
             <div class="leftsection">
                 Hi! My name is <span class="purple">Debayan</span>
@@ -306,7 +300,7 @@
 
                 <span id="element"></span>
                 <div class="buttons">
-                    <a href="res..pdf" download="YourResumeName.pdf">
+                    <a href="My_resume.pdf" download="YourResumeName.pdf">
                         <button class="btn">Download Resume</button>
                     </a>
 
@@ -320,7 +314,7 @@
                 <img src="bg.png" alt="">
             </div>
         </section>
-        <hr>
+        
         <section class="secondsection">
             <span class="textgray">What I had done before</span>
             <h1>Work Experience</h1>
@@ -349,7 +343,7 @@
                         Javascript Developer (2022)
                     </div>
                     <div class="vertical-desc">
-                        JavaScript is a little bit hard language rather than the other programming language, I had learnt the DOM manipulation and the details of each part of the language and I think that will help me in my backend module also .I had also made so many projects related to frontened development(GITHUB)
+                        .I had also made so many projects related to frontened development(GITHUB)
                     </div>
                 </div>
                 <div class="vertical">
@@ -373,14 +367,171 @@
                 <div class="vertical">
                     <img class="image-top" src="api.png.png" alt="bg">
                     <div class="vertical-title">
-                        Facebook clone
+                        Data-Structure& Algorithm
                     </div>
                     <div class="vertical-desc">
-                        i had made several projects related to frontend development like A FULLY FLEDGED SPOTIFY APP , several CLONE of web app like amazon , flipkart , FACEBOOk etc
+                       I am currently working with the DSA and preparing myself to be perfect to take any rational decision and implement my programming skills to any real life project
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="fb.png.png" alt="bg">
+                    <img class="image-top" src="java.png.png" alt="bg">
+                    <div class="vertical-title">
+                        Projects
+                        
+                    </div>
+                    <div class="vertical-desc">
+                        I am currently working with the DSA and preparing myself to be perfect to take any rational decision and implement my programming skills to any real life project
+                     </div>
+                </div>
+              
+
+            </div>
+        </section>
+      
+
+        <section class="thirdsection">
+            <span class="textgray">My Academic Qualification</span>
+            <h1> My Education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="s.png.png" alt="bg">
+                  
+                    <div class="vertical-title">
+                        Secondary
+                        <div>2020</div>
+                    </div>
+                    <div class="vertical-desc">
+                       I had done my schooling from SMNHS,And I had completed my Secondary with 82.01 %
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="hs.png.png" alt="bg">
+                  
+                    <div class="vertical-title">
+                        Higher Secondary
+                        <div>2022</div>
+                    </div>
+                    <div class="vertical-desc">
+                        I had completed my Higher Secondary from SMNHS with the 82 % marks 
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="1.png.png" alt="bg">
+                    
+                    <div class="vertical-title">
+                       Bachelor in technology 
+                       <div>1st year</div>
+                       <div>(2022-23)</div>
+                    </div>
+                    <div class="vertical-desc">
+                        I am pursuing currently my Bachelor in CSE (AI&ML) from Brainware University , Barasat and I had completed my 1st year with 8.67 sgpa
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="2.png.png" alt="bg">
+                  
+                    
+                    <div class="vertical-title">
+                        2nd year year
+                        <div>(2023-24)</div>
+                    </div>
+                    <div class="vertical-desc">
+                        currently I am in my second year and third semester
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="3.png.png" alt="bg">
+                    
+                    <div class="vertical-title">
+                        <!-- 3rd year -->
+                        <!-- <div>(2024-25)</div> -->
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. At saepe id sint suscipit unde sed, tenetur illum veniam non quas minima sunt beatae? -->
+                        
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pngwing.com(3).png" alt="bg">
+                    <div class="vertical-title">
+                       <!-- 4 th year -->
+                       <!-- <div>(2025-26)</div> -->
+                    </div>
+                    <div class="vertical-desc">
+                        <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea nulla, in culpa quaerat dolore, labore accusamus deleniti, ipsam ipsum quisquam quo eveniet nemo. -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    
+                    <div class="vertical-title">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        
+        <section class="fourthsection">
+            <span class="textgray">My Skills</span>
+            <h1> My skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="s.png.png" alt="bg">
+                  
+                    <div class="vertical-title">
+                        Communication Skills
+                    </div>
+                    <div class="vertical-desc">
+                       From My Secondary I had worked on my communication skills and currently I had increased my english speaking capability and I am also working on my confident point so that I would be fully fledged while talking with any customers
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="fotis-fotopoulos-SyvsTmuuZyM-unsplash.jpg" alt="bg">
+                  
+                    <div class="vertical-title">
+                        Team-Work
+                    </div>
+                    <div class="vertical-desc">
+                        Team work is the best work , It can also gives us the proper &accurate  work that should help on our project and I am too good on Group Discussion and more things like that. And I am egar to implement that.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="computational.png.png" alt="bg">
+                    
+                    <div class="vertical-title">
+                      Problem Solving Capability
+                    </div>
+                    <div class="vertical-desc">
+                        The best for being a computer science engineer is having a mentality to solve any rational problem with the power of our computational thinking, I had worked with the languages like C , C++, JAVA , JavaScript, Python etc that had endourced my problem solving capabilities!
+                    </div>
+                </div>
+                <div class="vertical">
+                    
+                    <img class="image-top" src="api.png.png" alt="bg">
+                  
+                    
+                    <div class="vertical-title">
+                        Web Development
+                    </div>
+                    <div class="vertical-desc">
+                        I had mentioned my work experience before there you may see my web development details and I had done so many projects related to web development and I had learnt and learning more more about web development, I had done HTML ,CSS and such frameworks such that Tailwind CSS , Bootstrap etc and Java script and currently I am working on my backend and reack.js and angular.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="python.png.png" alt="bg">
+                    
+                    <div class="vertical-title">
+                        Computer Language
+                    </div>
+                    <div class="vertical-desc">
+                       I had learnt the fundamentals of C in my first year and currently I am working on Python and Java . I am capable to implement that coding fundamentals in our daily life.
+                        
+                    </div>
+                </div>
+                
+                <div class="vertical">
+                    
                     <div class="vertical-title">
                         
                     </div>
@@ -389,16 +540,11 @@
             </div>
         </section>
     </main>
-
     <footer>
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Debayan's developer Portfolio</h3>
-                <h4>Copyright &COPY; by Debayan (2023)</h4>
-            </div>
-
-        </div>
+        <p> Made By Debayan Ghosh &copy; by Debayan Ghosh</p>
     </footer>
+
+    
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
@@ -407,6 +553,7 @@
             typeSpeed: 50,
         });
     </script>
+  
 
 </body>
 
